@@ -6,8 +6,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.UUID;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,6 +16,6 @@ public class CarDto {
     private String brand;
     private String licensePlate;
     private String manufacturer;
-    private UUID operationCity;
+    private Long operationCity;
     private Status status;
 }

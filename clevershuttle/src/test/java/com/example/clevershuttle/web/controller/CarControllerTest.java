@@ -1,7 +1,6 @@
 package com.example.clevershuttle.web.controller;
 
 import com.example.clevershuttle.web.model.CarDto;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
