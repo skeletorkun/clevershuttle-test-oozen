@@ -1,6 +1,7 @@
 package com.example.clevershuttle.web.controller;
 
 import com.example.clevershuttle.web.model.CarDto;
+import com.example.clevershuttle.web.services.CarService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ class CarControllerTest {
     @Test
     void getCarById() throws Exception {
 
-        mockMvc.perform(get("/api/car/" + 123L).accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get("/api/car/" + 1).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
 
     }
